@@ -19,7 +19,7 @@ with open(nome_arquivo, mode='w', newline='', encoding='utf-8') as arquivo_csv:
     
     horario = datetime.now()
     
-    # Gera 100 pedidos simulados
+    # Gera N pedidos simulados com base no quanto for necessário
     for i in range(1, 101):
         mesa = random.randint(1, 40)
         prato = random.choice(pratos)
